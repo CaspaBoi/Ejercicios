@@ -1,0 +1,32 @@
+function printUpTo(x) {
+  // your code here
+  if(x<=0){
+    return("false")
+  }
+  for(var i=1;i<=x;i++){
+    console.log(i)
+  }
+}
+printUpTo(1000); // debería imprimir todos los enteros de 1 to 1000
+var y = printUpTo(-10); // debería imprimir false
+console.log(y); // debería imprimir false
+///
+function printSum(x) {
+  var sum = 0;
+  //your code here
+  for(var i=0;i<=x;i++){
+    sum +=i
+  }
+  return sum
+}
+var y = printSum(255) // debería imprimir todos los enteros de 0 a 255 y que cada entero imprima la suma parcial.
+console.log(y) // // debería imprimir 32640
+///
+function printSumArray(x) {
+  var sum = 0;
+  for(var i=0; i<x.length; i++) {
+    sum += x[i]
+  }
+  return sum;
+}
+console.log( printSumArray([1,2,3]) ); // debería imprimir 6
