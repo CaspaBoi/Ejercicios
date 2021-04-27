@@ -59,4 +59,9 @@ function comparar(arr){
   return arr
   }
   ///
-  
+  function remover(arr,remove1,remove2){
+  for(var i=remove1;i<remove2;i++){
+    arr.splice(i,1);
+  }
+  return arr
+}
