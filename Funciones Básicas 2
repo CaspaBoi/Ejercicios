@@ -1,0 +1,35 @@
+def cuentatras(x):
+    arr = []
+    for i in range(x,0,-1):
+        arr.append(i)
+    return arr
+
+print(cuentatras(5))
+///
+def printandreturn(prnt,retrn):
+    print(prnt)
+    return retrn
+///
+def first_plus_length(arr):
+
+    suma = arr[0] + len(arr)
+    return suma
+///
+def greater_than_second(arr):
+    newarr= []
+    for i in arr:
+        if(i>arr[1]):
+            newarr.append(i)
+        elif(len(arr)<3):
+            return "False"
+    
+    return newarr
+///
+def incrediblearr(x,y):
+    newarr= []
+    for i in range(x,0,-1):
+        newarr.append(y)
+        
+    
+    return newarr
+    
