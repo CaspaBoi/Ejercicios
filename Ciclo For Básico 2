@@ -1,0 +1,91 @@
+def big(arr):
+    for i in range (len(arr)):
+        if arr[i]>0 :
+            arr[i]= "big"
+
+    
+    return arr
+///
+def contarpositivos(arr):
+    contar = 0
+    for i in range (len(arr)):
+
+        if arr[i]>0:
+            contar += 1
+    
+    arr[len(arr)-1] = contar
+
+
+    
+    return arr
+///
+def sumatotal(arr):
+    contar = 0
+    for i in range (len(arr)):
+
+        contar += arr[i]
+    
+    return contar
+///
+def promedio(arr):
+    promedio = 0
+    for i in range (len(arr)):
+
+        promedio += arr[i]
+    
+    return promedio / len(arr)
+///
+def longitud(arr):
+    
+     if(len(arr)>0):
+        return len(arr)
+        
+     else:
+        return "False"
+///
+def minimo(arr):
+    if len(arr)==0 :
+            return "False"
+    min = arr[0]
+    for i in range (len(arr)):
+        
+         if min>arr[i]:
+            min = arr[i]
+
+    return min
+    
+///
+def maximo(arr):
+    if len(arr)==0 :
+            return "False"
+    min = arr[0]
+    for i in range (len(arr)):
+        
+         if min<arr[i]:
+            min = arr[i]
+
+    return min
+///
+def analisis(arr):
+    maxi = arr[0]
+    mini = arr[0]
+    promedio = 0
+    totalTotal = 0
+    longitud = len(arr)
+    for i in range (len(arr)):
+         promedio += arr[i]
+         totalTotal = promedio
+         if mini>arr[i]:
+                mini = arr[i]
+
+         elif maxi<arr[i]:
+                maxi = arr[i]
+    
+    promedio = promedio / len(arr)
+    
+    return (f"totalTotal: {totalTotal}, promedio: {promedio}, mínimo: {mini}, máximo {maxi}, longitud: {longitud} ")
+///
+def reverse(arr):
+    res = arr[::-1]
+    return res
+    
